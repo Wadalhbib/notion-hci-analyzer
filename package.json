@@ -9,7 +9,9 @@
   "scripts": {
     "start": "node bin/cli.js",
     "build": "tsc",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "test": "echo \"No tests specified\" && exit 0",
+    "prepublishOnly": "npm run build && npm test"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.15",
@@ -23,5 +25,20 @@
     "@types/node": "^20.11.24",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
-  }
+  },
+  "author": "Wadalhbib <wadalhbib@example.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wadalhbib/notion-hci-analyzer.git"
+  },
+  "keywords": [
+    "notion",
+    "hci",
+    "usability",
+    "ux"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "MIT"
 }

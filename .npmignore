@@ -1,0 +1,6 @@
+src/
+.github/
+tsconfig.json
+.env
+.env.example
+*.log
