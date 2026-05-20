@@ -58,14 +58,22 @@ const issuesData: Issue[] = [
   }
 ];
 
+import screen1 from './assets/prototype_screen1_home_1779075956518.png';
+import screen2 from './assets/prototype_screen2_database_1779075981405.png';
+import screen3 from './assets/prototype_screen3_panel_1779076090142.png';
+import screen4 from './assets/prototype_screen4_create_1779076122572.png';
+import screen5 from './assets/prototype_screen5_delete_1779076236789.png';
+import screen6 from './assets/prototype_screen6_trash_1779076259736.png';
+import screen7 from './assets/prototype_screen7_breadcrumb_1779076387384.png';
+
 const prototypeScreens = [
-  { title: "1. Workspace Overview", file: "prototype_screen1_home_1779075956518.png" },
-  { title: "2. Database View", file: "prototype_screen2_database_1779075981405.png" },
-  { title: "3. Property Management", file: "prototype_screen3_panel_1779076090142.png" },
-  { title: "4. Create/Edit Item", file: "prototype_screen4_create_1779076122572.png" },
-  { title: "5. Delete Item", file: "prototype_screen5_delete_1779076236789.png" },
-  { title: "6. Trash & Recovery", file: "prototype_screen6_trash_1779076259736.png" },
-  { title: "7. Navigation Breadcrumb", file: "prototype_screen7_breadcrumb_1779076387384.png" }
+  { title: "1. Workspace Overview", file: screen1 },
+  { title: "2. Database View", file: screen2 },
+  { title: "3. Property Management", file: screen3 },
+  { title: "4. Create/Edit Item", file: screen4 },
+  { title: "5. Delete Item", file: screen5 },
+  { title: "6. Trash & Recovery", file: screen6 },
+  { title: "7. Navigation Breadcrumb", file: screen7 }
 ];
 
 function App() {
@@ -121,7 +129,7 @@ function App() {
 
             <div className="card glass">
               <h3>Research Methodology</h3>
-              <p>We conducted moderated usability tests with 12 active Notion users across various skill levels. Participants were asked to perform common tasks such as finding specific data in a large database, navigating to a deeply nested page, and creating a filtered view. We measured task completion time, error rates, and subjective satisfaction.</p>
+              <p>I conducted moderated usability tests with 12 active Notion users across various skill levels. Participants were asked to perform common tasks such as finding specific data in a large database, navigating to a deeply nested page, and creating a filtered view. I measured task completion time, error rates, and subjective satisfaction.</p>
             </div>
           </section>
         )}
@@ -183,7 +191,7 @@ function App() {
         {activeTab === 'issues' && (
           <section className="section">
             <h2>Usability Issues</h2>
-            <p>We identified 5 major usability issues that violate core HCI principles.</p>
+            <p>I identified 5 major usability issues that violate core HCI principles.</p>
             
             <div className="flex flex-col gap-2">
               {issuesData.map((issue, index) => (
@@ -225,7 +233,7 @@ function App() {
         {activeTab === 'proposal' && (
           <section className="section">
             <h2>Redesign Proposal</h2>
-            <p>We applied 6 HCI principles to redesign the Notion experience.</p>
+            <p>I applied 6 HCI principles to redesign the Notion experience.</p>
 
             <div className="grid grid-cols-3 gap-4 mb-8">
               <div className="card glass">
@@ -272,7 +280,7 @@ function App() {
         {activeTab === 'impact' && (
           <section className="section">
             <h2>Impact & Results</h2>
-            <p>After implementing the redesign, we tested the interface with the same 12 participants.</p>
+            <p>After implementing the redesign, I tested the interface with the same 12 participants.</p>
 
             <div className="grid grid-cols-4 gap-2 mb-8">
               <div className="card glass metric-card">
@@ -314,7 +322,7 @@ function App() {
 
             <div className="card glass bg-secondary" style={{ color: 'white', textAlign: 'center' }}>
               <h3>🎉 Success Conclusion</h3>
-              <p>The HCI redesign successfully addressed the major usability issues found in the research phase. By applying established principles, we reduced cognitive load and improved efficiency across all tested personas.</p>
+              <p>The HCI redesign successfully addressed the major usability issues found in the research phase. By applying established principles, I reduced cognitive load and improved efficiency across all tested personas.</p>
             </div>
           </section>
         )}
@@ -329,7 +337,7 @@ function App() {
               <h3>{prototypeScreens[prototypeIndex].title}</h3>
               <div style={{ margin: '1rem 0' }}>
                 <img 
-                  src={`/${prototypeScreens[prototypeIndex].file}`} 
+                  src={prototypeScreens[prototypeIndex].file} 
                   alt={prototypeScreens[prototypeIndex].title} 
                   style={{ maxWidth: '100%', borderRadius: '0.5rem', border: '1px solid var(--card-border)' }}
                 />

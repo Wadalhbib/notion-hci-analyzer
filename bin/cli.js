@@ -54,7 +54,7 @@ program
     console.log(chalk.blue('Generating report...'));
     
     // In a real app, this would call the analyzer.
-    // For now, we load a mock report or use the analyzer if compiled.
+    // For now, load a mock report or use the analyzer if compiled.
     try {
       const { NotionAnalyzer } = require('../dist/analyzer');
       const { HCIModule } = require('../dist/hciPrinciples');
@@ -63,7 +63,7 @@ program
       const analyzer = new NotionAnalyzer();
       const hci = new HCIModule();
       
-      // Mock scores for now since we don't have real data
+      // Mock scores for now since there is no real data
       const scores = {
         VISIBILITY: 8,
         MATCH_REAL_WORLD: 7,

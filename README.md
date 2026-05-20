@@ -50,7 +50,7 @@ npm install -g notion-hci-analyzer
 
 ## HCI Principles
 
-We evaluate your workspace based on Nielsen's heuristics:
+This tool evaluates your workspace based on Nielsen's heuristics:
 - **Simplicity & Minimalism**: Avoid database property bloat.
 - **Consistency**: Ensure uniform naming and property usage.
 - **Visibility**: Clear status and structure.
@@ -74,7 +74,7 @@ PRINCIPLE BREAKDOWN:
 ```
 
 ## Contributing
-Contributions are welcome! Please read `CONTRIBUTING.md` for details on our code of conduct and the process for submitting pull requests.
+Contributions are welcome! Please read `CONTRIBUTING.md` for details on the code of conduct and the process for submitting pull requests.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
